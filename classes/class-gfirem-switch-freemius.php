@@ -55,14 +55,15 @@ class GFireMSwitchFreemius {
 				'has_addons'          => false,
 				'has_paid_plans'      => true,
 				'is_org_compliant'    => false,
+				'is_premium_only'     => true,
 				'trial'               => array(
 					'days'               => 14,
 					'is_require_payment' => true,
 				),
 				'menu'                => array(
-					'slug'           => 'gfirem-switch',
-					'first-path'     => 'admin.php?page=gfirem-switch',
-					'support'        => false,
+					'slug'       => 'gfirem-switch',
+					'first-path' => 'admin.php?page=gfirem-switch',
+					'support'    => false,
 				),
 				// Set the SDK to work in a sandbox mode (for development & testing).
 				// IMPORTANT: MAKE SURE TO REMOVE SECRET KEY BEFORE DEPLOYMENT.

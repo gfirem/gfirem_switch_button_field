@@ -67,7 +67,7 @@ class GFireMSwitchManager {
 	 * Adding the Admin Page
 	 */
 	public function admin_menu() {
-		add_menu_page( __( "Switch", "gfirem_switch-locale" ), __( "Switch", "gfirem_switch-locale" ), 'manage_options', GFireMSwitch::getSlug(), array( $this, 'screen' ), 'dashicons-admin-settings' );
+		add_menu_page( __( "Switch", "gfirem_switch-locale" ), __( "Switch", "gfirem_switch-locale" ), 'manage_options', GFireMSwitch::getSlug(), array( $this, 'screen' ), 'dashicons-pressthis' );
 	}
 
 	/**
