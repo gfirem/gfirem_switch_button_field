@@ -19,6 +19,9 @@ class GFireMSwitchManager {
 			     && FrmAppHelper::pro_is_installed() ) {
 				if ( GFireMSwitch::getFreemius()->is_paying() ) {
 					//Implements here
+					require_once 'class-gfirem-fieldbase.php';
+					require_once 'class-gfirem-switch-field.php';
+					new GFireMSwitchField();
 				}
 			} else {
 				add_action( 'admin_notices', array( $this, 'required_formidable_pro' ) );
